@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h1><%= title %></h1>
+      <select id="chapters" class="w3-select" style="margin: 2px;">
+        <option disabled selected>Select a Chapter</option>
+      </select>
+      <select id="problems" class="w3-select" style="margin: 2px;">
+        <option disabled selected>Select a Problem</option>
+      </select>
+      <div id="problemImages" style="padding:2px;"></div>
+      <ul id="comments" class="w3-ul" style="display:none; padding: 5px; margin: 10px;"></ul>
+      <form id="inputComment" style="display:none; padding: 5px; margin: 10px;">
+        <div class="form-group">
+          <input type="text" class="form-control w3-input" id="newComment" placeholder="enter a comment">
+        </div>
+        <button type="submit" class="w3-btn w3-block w3-wide" style="margin-top:10px; background-color: beige;">Submit</button>
+      </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/client.js"></script>
+  </body>
+</html>
